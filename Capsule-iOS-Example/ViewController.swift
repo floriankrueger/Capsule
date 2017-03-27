@@ -294,15 +294,6 @@ class ViewController: UIViewController, Capsule.Container {
         super.viewDidLoad()
         view.backgroundColor = .white
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-//        let modal = UIViewController()
-//        modal.view.backgroundColor = .green
-//        
-//        display(contentController: modal)
-    }
 
 }
 
