@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* Capsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Capsule.framework */; };
-		52D6D9981BEFF375002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
-		52D6D9EA1BEFFFA4002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
-		52D6DA091BF00081002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
-		52D6DA261BF00118002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
-		DD7502881C68FEDE006590AF /* Capsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Capsule.framework */; };
+		52D6D9981BEFF375002C0205 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Container.swift */; };
+		52D6DA091BF00081002C0205 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Container.swift */; };
 		DD7502921C690C7A006590AF /* Capsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* Capsule.framework */; };
+		DFAFF3471E8900AB00736D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3461E8900AB00736D56 /* AppDelegate.swift */; };
+		DFAFF3491E8900AB00736D56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3481E8900AB00736D56 /* ViewController.swift */; };
+		DFAFF34E1E8900AB00736D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAFF34D1E8900AB00736D56 /* Assets.xcassets */; };
+		DFAFF3511E8900AB00736D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAFF34F1E8900AB00736D56 /* LaunchScreen.storyboard */; };
+		DFAFF3561E8900D100736D56 /* Capsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Capsule.framework */; };
+		DFAFF3571E8900D100736D56 /* Capsule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Capsule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFAFF35E1E890CBB00736D56 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF35D1E890CBB00736D56 /* ContainerView.swift */; };
+		DFAFF3601E89109100736D56 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF35F1E89109100736D56 /* SubViewController.swift */; };
+		DFAFF3621E89272700736D56 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3611E89272700736D56 /* TransitionAnimation.swift */; };
+		DFAFF3631E89272700736D56 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3611E89272700736D56 /* TransitionAnimation.swift */; };
+		DFAFF3651E89279800736D56 /* DisplayAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3641E89279800736D56 /* DisplayAnimation.swift */; };
+		DFAFF3661E89279800736D56 /* DisplayAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3641E89279800736D56 /* DisplayAnimation.swift */; };
+		DFAFF3681E892AC100736D56 /* HideAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3671E892AC100736D56 /* HideAnimation.swift */; };
+		DFAFF3691E892AC100736D56 /* HideAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFF3671E892AC100736D56 /* HideAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +35,6 @@
 			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
 			remoteInfo = Capsule;
 		};
-		DD7502801C68FCFC006590AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52D6DA0E1BF000BD002C0205;
-			remoteInfo = "Capsule-macOS";
-		};
 		DD7502931C690C7A006590AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
@@ -38,19 +42,48 @@
 			remoteGlobalIDString = 52D6D9EF1BEFFFBE002C0205;
 			remoteInfo = "Capsule-tvOS";
 		};
+		DFAFF3581E8900D100736D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
+			remoteInfo = "Capsule-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFAFF35A1E8900D100736D56 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFAFF3571E8900D100736D56 /* Capsule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* Capsule-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capsule-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D6D9961BEFF375002C0205 /* Capsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Capsule.swift; path = Sources/Capsule.swift; sourceTree = "<group>"; };
-		52D6D9E21BEFFF6E002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D9961BEFF375002C0205 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
 		52D6D9F01BEFFFBE002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D6DA0F1BF000BD002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2FAA261CD0B6D800659CF4 /* Capsule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Capsule.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* CapsuleTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CapsuleTests.plist; sourceTree = "<group>"; };
-		DD75027A1C68FCFC006590AF /* Capsule-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capsule-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75028D1C690C7A006590AF /* Capsule-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capsule-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAFF3441E8900AB00736D56 /* Capsule-iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capsule-iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAFF3461E8900AB00736D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFAFF3481E8900AB00736D56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFAFF34D1E8900AB00736D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFAFF3501E8900AB00736D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFAFF3521E8900AB00736D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAFF35D1E890CBB00736D56 /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		DFAFF35F1E89109100736D56 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		DFAFF3611E89272700736D56 /* TransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionAnimation.swift; path = Sources/TransitionAnimation.swift; sourceTree = "<group>"; };
+		DFAFF3641E89279800736D56 /* DisplayAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayAnimation.swift; path = Sources/DisplayAnimation.swift; sourceTree = "<group>"; };
+		DFAFF3671E892AC100736D56 /* HideAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HideAnimation.swift; path = Sources/HideAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,32 +102,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52D6D9DE1BEFFF6E002C0205 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52D6D9EC1BEFFFBE002C0205 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52D6DA0B1BF000BD002C0205 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD7502771C68FCFC006590AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD7502881C68FEDE006590AF /* Capsule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,14 +117,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFAFF3411E8900AB00736D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAFF3561E8900D100736D56 /* Capsule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
-				52D6D9961BEFF375002C0205 /* Capsule.swift */,
+				52D6D9961BEFF375002C0205 /* Container.swift */,
+				DFAFF3641E89279800736D56 /* DisplayAnimation.swift */,
+				DFAFF3671E892AC100736D56 /* HideAnimation.swift */,
+				DFAFF3611E89272700736D56 /* TransitionAnimation.swift */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
+				DFAFF3451E8900AB00736D56 /* Capsule-iOS-Example */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,11 +146,9 @@
 			children = (
 				52D6D97C1BEFF229002C0205 /* Capsule.framework */,
 				52D6D9861BEFF229002C0205 /* Capsule-iOS Tests.xctest */,
-				52D6D9E21BEFFF6E002C0205 /* Capsule.framework */,
 				52D6D9F01BEFFFBE002C0205 /* Capsule.framework */,
-				52D6DA0F1BF000BD002C0205 /* Capsule.framework */,
-				DD75027A1C68FCFC006590AF /* Capsule-macOS Tests.xctest */,
 				DD75028D1C690C7A006590AF /* Capsule-tvOS Tests.xctest */,
+				DFAFF3441E8900AB00736D56 /* Capsule-iOS-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +178,20 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
+		DFAFF3451E8900AB00736D56 /* Capsule-iOS-Example */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFF3461E8900AB00736D56 /* AppDelegate.swift */,
+				DFAFF3481E8900AB00736D56 /* ViewController.swift */,
+				DFAFF35F1E89109100736D56 /* SubViewController.swift */,
+				DFAFF35D1E890CBB00736D56 /* ContainerView.swift */,
+				DFAFF34D1E8900AB00736D56 /* Assets.xcassets */,
+				DFAFF34F1E8900AB00736D56 /* LaunchScreen.storyboard */,
+				DFAFF3521E8900AB00736D56 /* Info.plist */,
+			);
+			path = "Capsule-iOS-Example";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,21 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52D6D9DF1BEFFF6E002C0205 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52D6D9ED1BEFFFBE002C0205 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52D6DA0C1BF000BD002C0205 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,24 +248,6 @@
 			productReference = 52D6D9861BEFF229002C0205 /* Capsule-iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		52D6D9E11BEFFF6E002C0205 /* Capsule-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52D6D9E71BEFFF6E002C0205 /* Build configuration list for PBXNativeTarget "Capsule-watchOS" */;
-			buildPhases = (
-				52D6D9DD1BEFFF6E002C0205 /* Sources */,
-				52D6D9DE1BEFFF6E002C0205 /* Frameworks */,
-				52D6D9DF1BEFFF6E002C0205 /* Headers */,
-				52D6D9E01BEFFF6E002C0205 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Capsule-watchOS";
-			productName = "Capsule-watchOS";
-			productReference = 52D6D9E21BEFFF6E002C0205 /* Capsule.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		52D6D9EF1BEFFFBE002C0205 /* Capsule-tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6DA011BEFFFBE002C0205 /* Build configuration list for PBXNativeTarget "Capsule-tvOS" */;
@@ -262,42 +265,6 @@
 			productName = "Capsule-tvOS";
 			productReference = 52D6D9F01BEFFFBE002C0205 /* Capsule.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		52D6DA0E1BF000BD002C0205 /* Capsule-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52D6DA201BF000BD002C0205 /* Build configuration list for PBXNativeTarget "Capsule-macOS" */;
-			buildPhases = (
-				52D6DA0A1BF000BD002C0205 /* Sources */,
-				52D6DA0B1BF000BD002C0205 /* Frameworks */,
-				52D6DA0C1BF000BD002C0205 /* Headers */,
-				52D6DA0D1BF000BD002C0205 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Capsule-macOS";
-			productName = "Capsule-macOS";
-			productReference = 52D6DA0F1BF000BD002C0205 /* Capsule.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DD7502791C68FCFC006590AF /* Capsule-macOS Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "Capsule-macOS Tests" */;
-			buildPhases = (
-				DD7502761C68FCFC006590AF /* Sources */,
-				DD7502771C68FCFC006590AF /* Frameworks */,
-				DD7502781C68FCFC006590AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DD7502811C68FCFC006590AF /* PBXTargetDependency */,
-			);
-			name = "Capsule-macOS Tests";
-			productName = "Capsule-OS Tests";
-			productReference = DD75027A1C68FCFC006590AF /* Capsule-macOS Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DD75028C1C690C7A006590AF /* Capsule-tvOS Tests */ = {
 			isa = PBXNativeTarget;
@@ -317,13 +284,32 @@
 			productReference = DD75028D1C690C7A006590AF /* Capsule-tvOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DFAFF3431E8900AB00736D56 /* Capsule-iOS-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFAFF3531E8900AB00736D56 /* Build configuration list for PBXNativeTarget "Capsule-iOS-Example" */;
+			buildPhases = (
+				DFAFF3401E8900AB00736D56 /* Sources */,
+				DFAFF3411E8900AB00736D56 /* Frameworks */,
+				DFAFF3421E8900AB00736D56 /* Resources */,
+				DFAFF35A1E8900D100736D56 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFAFF3591E8900D100736D56 /* PBXTargetDependency */,
+			);
+			name = "Capsule-iOS-Example";
+			productName = "Capsule-iOS-Example";
+			productReference = DFAFF3441E8900AB00736D56 /* Capsule-iOS-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		52D6D9731BEFF229002C0205 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Capsule;
 				TargetAttributes = {
@@ -335,25 +321,17 @@
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0800;
 					};
-					52D6D9E11BEFFF6E002C0205 = {
-						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
-					};
 					52D6D9EF1BEFFFBE002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
-					};
-					52D6DA0E1BF000BD002C0205 = {
-						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
-					};
-					DD7502791C68FCFC006590AF = {
-						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 0800;
 					};
 					DD75028C1C690C7A006590AF = {
 						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 0800;
+					};
+					DFAFF3431E8900AB00736D56 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -363,6 +341,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 52D6D9721BEFF229002C0205;
 			productRefGroup = 52D6D97D1BEFF229002C0205 /* Products */;
@@ -370,12 +349,10 @@
 			projectRoot = "";
 			targets = (
 				52D6D97B1BEFF229002C0205 /* Capsule-iOS */,
-				52D6DA0E1BF000BD002C0205 /* Capsule-macOS */,
-				52D6D9E11BEFFF6E002C0205 /* Capsule-watchOS */,
 				52D6D9EF1BEFFFBE002C0205 /* Capsule-tvOS */,
 				52D6D9851BEFF229002C0205 /* Capsule-iOS Tests */,
-				DD7502791C68FCFC006590AF /* Capsule-macOS Tests */,
 				DD75028C1C690C7A006590AF /* Capsule-tvOS Tests */,
+				DFAFF3431E8900AB00736D56 /* Capsule-iOS-Example */,
 			);
 		};
 /* End PBXProject section */
@@ -395,28 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52D6D9E01BEFFF6E002C0205 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52D6D9EE1BEFFFBE002C0205 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52D6DA0D1BF000BD002C0205 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD7502781C68FCFC006590AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,6 +386,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFAFF3421E8900AB00736D56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAFF3511E8900AB00736D56 /* LaunchScreen.storyboard in Resources */,
+				DFAFF34E1E8900AB00736D56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -437,7 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D9981BEFF375002C0205 /* Capsule.swift in Sources */,
+				DFAFF3681E892AC100736D56 /* HideAnimation.swift in Sources */,
+				DFAFF3621E89272700736D56 /* TransitionAnimation.swift in Sources */,
+				DFAFF3651E89279800736D56 /* DisplayAnimation.swift in Sources */,
+				52D6D9981BEFF375002C0205 /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,34 +416,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52D6D9DD1BEFFF6E002C0205 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52D6D9EA1BEFFFA4002C0205 /* Capsule.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52D6D9EB1BEFFFBE002C0205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6DA091BF00081002C0205 /* Capsule.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52D6DA0A1BF000BD002C0205 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52D6DA261BF00118002C0205 /* Capsule.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD7502761C68FCFC006590AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DFAFF3691E892AC100736D56 /* HideAnimation.swift in Sources */,
+				DFAFF3631E89272700736D56 /* TransitionAnimation.swift in Sources */,
+				DFAFF3661E89279800736D56 /* DisplayAnimation.swift in Sources */,
+				52D6DA091BF00081002C0205 /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +431,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAFF3401E8900AB00736D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAFF3491E8900AB00736D56 /* ViewController.swift in Sources */,
+				DFAFF3471E8900AB00736D56 /* AppDelegate.swift in Sources */,
+				DFAFF35E1E890CBB00736D56 /* ContainerView.swift in Sources */,
+				DFAFF3601E89109100736D56 /* SubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,17 +453,28 @@
 			target = 52D6D97B1BEFF229002C0205 /* Capsule-iOS */;
 			targetProxy = 52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */;
 		};
-		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52D6DA0E1BF000BD002C0205 /* Capsule-macOS */;
-			targetProxy = DD7502801C68FCFC006590AF /* PBXContainerItemProxy */;
-		};
 		DD7502941C690C7A006590AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 52D6D9EF1BEFFFBE002C0205 /* Capsule-tvOS */;
 			targetProxy = DD7502931C690C7A006590AF /* PBXContainerItemProxy */;
 		};
+		DFAFF3591E8900D100736D56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6D97B1BEFF229002C0205 /* Capsule-iOS */;
+			targetProxy = DFAFF3581E8900D100736D56 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFAFF34F1E8900AB00736D56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFAFF3501E8900AB00736D56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		52D6D98E1BEFF229002C0205 /* Debug */ = {
@@ -673,51 +643,6 @@
 			};
 			name = Release;
 		};
-		52D6D9E81BEFFF6E002C0205 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Configs/Capsule.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Capsule.Capsule-watchOS";
-				PRODUCT_NAME = Capsule;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		52D6D9E91BEFFF6E002C0205 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Configs/Capsule.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Capsule.Capsule-watchOS";
-				PRODUCT_NAME = Capsule;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		52D6DA021BEFFFBE002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -763,84 +688,6 @@
 			};
 			name = Release;
 		};
-		52D6DA211BF000BD002C0205 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Configs/Capsule.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Capsule.Capsule-macOS";
-				PRODUCT_NAME = Capsule;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		52D6DA221BF000BD002C0205 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Configs/Capsule.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Capsule.Capsule-macOS";
-				PRODUCT_NAME = Capsule;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		DD7502831C68FCFC006590AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Configs/CapsuleTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Capsule.Capsule-macOS-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		DD7502841C68FCFC006590AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Configs/CapsuleTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Capsule.Capsule-macOS-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		DD7502961C690C7A006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -865,6 +712,40 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		DFAFF3541E8900AB00736D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "Capsule-iOS-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.projectserver.Capsule-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DFAFF3551E8900AB00736D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "Capsule-iOS-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.projectserver.Capsule-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -898,38 +779,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52D6D9E71BEFFF6E002C0205 /* Build configuration list for PBXNativeTarget "Capsule-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52D6D9E81BEFFF6E002C0205 /* Debug */,
-				52D6D9E91BEFFF6E002C0205 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		52D6DA011BEFFFBE002C0205 /* Build configuration list for PBXNativeTarget "Capsule-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52D6DA021BEFFFBE002C0205 /* Debug */,
 				52D6DA031BEFFFBE002C0205 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52D6DA201BF000BD002C0205 /* Build configuration list for PBXNativeTarget "Capsule-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52D6DA211BF000BD002C0205 /* Debug */,
-				52D6DA221BF000BD002C0205 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "Capsule-macOS Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD7502831C68FCFC006590AF /* Debug */,
-				DD7502841C68FCFC006590AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -942,6 +796,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DFAFF3531E8900AB00736D56 /* Build configuration list for PBXNativeTarget "Capsule-iOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAFF3541E8900AB00736D56 /* Debug */,
+				DFAFF3551E8900AB00736D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
