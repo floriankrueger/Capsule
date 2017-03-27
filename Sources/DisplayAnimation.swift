@@ -30,9 +30,22 @@ public enum DisplayAnimation {
         }
     }
     
+    func startFrame(forContainerViewBounds bounds: CGRect) -> CGRect {
+        var frame = bounds
+        
+        switch self {
+        case .none:             break
+        case .fadeIn:           break
+        case .custom(let a):    frame = a.startFrame(forContainerViewBounds: bounds)
+        }
+        
+        return frame
+    }
+    
 }
 
 public protocol CustomDisplayAnimation {
     var duration: TimeInterval { get }
     var startAlpha: CGFloat { get }
+    func startFrame(forContainerViewBounds bounds: CGRect) -> CGRect
 }

@@ -22,6 +22,18 @@ public enum HideAnimation {
         }
     }
     
+    func endFrame(forContainerViewBounds bounds: CGRect) -> CGRect {
+        var frame = bounds
+        
+        switch self {
+        case .none:             break
+        case .fadeOut:          break
+        case .custom(let a):    frame = a.endFrame(forContainerViewBounds: bounds)
+        }
+        
+        return frame
+    }
+    
     var duration: TimeInterval {
         switch self {
         case .none:                     return 0.0
@@ -35,5 +47,6 @@ public enum HideAnimation {
 public protocol CustomHideAnimation {
     var duration: TimeInterval { get }
     var endAlpha: CGFloat { get }
+    func endFrame(forContainerViewBounds bounds: CGRect) -> CGRect
 }
 
