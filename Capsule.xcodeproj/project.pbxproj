@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* Capsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Capsule.framework */; };
 		52D6D9981BEFF375002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
-		52D6D99B1BEFF375002C0205 /* CapsuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* CapsuleTests.swift */; };
 		52D6D9EA1BEFFFA4002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
 		52D6DA091BF00081002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
 		52D6DA261BF00118002C0205 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* Capsule.swift */; };
-		DD7502861C68FDDC006590AF /* CapsuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* CapsuleTests.swift */; };
 		DD7502881C68FEDE006590AF /* Capsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Capsule.framework */; };
 		DD7502921C690C7A006590AF /* Capsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* Capsule.framework */; };
-		DD75029A1C690CBE006590AF /* CapsuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* CapsuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +44,6 @@
 		52D6D97C1BEFF229002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* Capsule-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capsule-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9961BEFF375002C0205 /* Capsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Capsule.swift; path = Sources/Capsule.swift; sourceTree = "<group>"; };
-		52D6D9971BEFF375002C0205 /* CapsuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CapsuleTests.swift; path = Tests/CapsuleTests/CapsuleTests.swift; sourceTree = "<group>"; };
 		52D6D9E21BEFFF6E002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* Capsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Capsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				52D6D9961BEFF375002C0205 /* Capsule.swift */,
-				52D6D9971BEFF375002C0205 /* CapsuleTests.swift */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 			);
@@ -330,7 +325,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Capsule";
+				ORGANIZATIONNAME = Capsule;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
@@ -450,7 +445,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D99B1BEFF375002C0205 /* CapsuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +476,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7502861C68FDDC006590AF /* CapsuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +483,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD75029A1C690CBE006590AF /* CapsuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
